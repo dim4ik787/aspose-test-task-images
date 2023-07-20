@@ -1,0 +1,4 @@
+<div class="container" [ngClass]="{'border-red': hasError }" aspDnd (fileDropped)="onFileDropped($event)">
+	<input type="file" id="fileDropRef" multiple (change)="fileBrowseHandler($event)" />
+	<span>{{ text }}</span>
+</div>
